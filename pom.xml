@@ -1,15 +1,32 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+ <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.employee</groupId>
     <artifactId>employee_parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
+  
+  <packagigng>jar</packagigng>
   <artifactId>employee_data</artifactId>
   <name>Employee data access</name>
   
   
+  <properties>
+  
+  <maven.compiler.source>12</maven.compiler.source>
+  <maven.compiler.target>12</maven.compiler.target>
+  
+  </properties>
+  
   <dependencies>
+  <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+<dependency>
+    <groupId>com.mchange</groupId>
+    <artifactId>c3p0</artifactId>
+    <version>0.9.5.5</version>
+</dependency>
+  
+  
   <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 <dependency>
     <groupId>org.hibernate</groupId>
